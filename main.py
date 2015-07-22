@@ -68,6 +68,8 @@ class NeuralNetwork():
     def draw(self):
         for layer in self.layers:
             layer.draw()
+        pyplot.axis('scaled')
+        pyplot.show()
 
 if __name__ == "__main__":
     vertical_distance_between_layers = 6
@@ -79,5 +81,3 @@ if __name__ == "__main__":
     network.add_layer(4)
     network.add_layer(1)
     network.draw()
-    pyplot.axis('scaled')
-    pyplot.show()
